@@ -13,14 +13,16 @@ class Program
 {
     static async Task Main(string[] args)
     {
+        string? Deskop = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
         // Excel dosyasının yolu
-        string excelFilePath = @"C:\Users\Abdurrahman\Downloads\crop_1.xlsx";
+
+        string excelFilePath = @$"{Deskop}\crop_1.xlsx";
 
         // Geçerli resimlerin boyutlarının kaydedileceği CSV dosyasının yolu
-        string outputCsvPath = @"D:\Photo_to_Csv\ImageProcess\ImageProcess\PhotoDimensions.csv";
+        string outputCsvPath = @$"{Deskop}\PhotoDimensions.csv";
 
         // Hatalı URL'lerin ID'lerinin kaydedileceği CSV dosyasının yolu
-        string invalidCsvPath = @"D:\Photo_to_Csv\ImageProcess\ImageProcess\InvalidIds.csv";
+        string invalidCsvPath = @$"{Deskop}\InvalidIds.csv";
 
         System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
 
