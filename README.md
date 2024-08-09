@@ -20,5 +20,5 @@ This project processes image URLs listed in an Excel file, checks the dimensions
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/image-dimension-checker.git
-   cd image-dimension-checker
+   git clone https://github.com/abdurrahmanyesilyurt/Image_Process.git
+   cd Image_Process
